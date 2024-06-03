@@ -1,0 +1,28 @@
+{
+  "name": "julycms.com-pc-ui",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^0.3.13",
+    "@nuxt/ui": "^2.16.0",
+    "nuxt": "^3.11.2",
+    "sass": "~1.64.2",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^1.7.0",
+    "@nuxtjs/sitemap": "^5.1.5",
+    "eslint": "^8.57.0",
+    "vite-plugin-eslint2": "^4.4.0"
+  }
+}
