@@ -10,17 +10,17 @@ useSeoMeta({
 // 关于我们
 const about = ref({});
 const { data: aboutData } = await useApi.navContent('about');
-about.value = aboutData.value.data;
+about.value = aboutData.value.data || {};
 
 // 业务领域
 const business = ref({});
 const { data: businessData } = await useApi.navContent('business');
-business.value = businessData.value.data;
+business.value = businessData.value.data || {};
 
 // 新闻
 const news = ref({});
 const { data: newsData } = await useApi.navContent('news', { page: 1, limit: 3 });
-news.value = newsData.value.data;
+news.value = newsData.value.data || {};
 </script>
 
 <template>
@@ -62,7 +62,7 @@ news.value = newsData.value.data;
   </div>
 
   <!-- news -->
-  <div class="layout">
+  <div v-if="news.documents && news.documents.length" class="layout">
     <div class="text-center">
       <h4 class="text-4xl text-slate-600">{{ news.catname }}</h4>
       <div class="text-2xl text-slate-200">{{ news.catnameEn }}</div>

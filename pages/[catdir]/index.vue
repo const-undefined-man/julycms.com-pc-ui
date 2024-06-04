@@ -1,9 +1,4 @@
 <script setup>
-const { baiduMapAK } = useRuntimeConfig().public;
-useHead({
-  script: [{ src: `//api.map.baidu.com/api?type=webgl&v=1.0&ak=${baiduMapAK}` }],
-});
-
 const { catdir } = useRoute().params;
 
 const catInfo = ref({ children: [] });
@@ -29,6 +24,7 @@ watch(page, getData);
     <!-- page -->
     <template v-if="catInfo.siteModel === 'page'">
       <h2 class="border-b border-gray-100 text-3xl font-medium pb-5 mb-6">{{ catInfo.document.title }}</h2>
+      <!-- 可以根据自己的需要来展示 -->
       <BaiduMap v-if="catdir == 'contact'" address="辽宁省大连市高新园区海外学子创业园"></BaiduMap>
       <article class="article leading-8" v-html="catInfo.document.content"></article>
     </template>

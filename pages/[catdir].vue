@@ -9,7 +9,7 @@ if (data.value) {
 
 // 左侧碎片
 const patchContact = ref([]);
-const { data: patch } = await useApi.patch(6);
+const { data: patch } = await useApi.patch(2);
 patchContact.value = patch.value.data.patchList;
 </script>
 

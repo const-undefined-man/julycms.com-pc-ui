@@ -18,7 +18,7 @@ if (curYear !== copyYear.value) {
 </script>
 
 <template>
-  <div v-if="links.documents" class="w-full px-6 md:container mx-auto my-10">
+  <div v-if="links.documents && links.documents.length" class="w-full px-6 md:container mx-auto my-10">
     <span class="font-medium">{{ links.catname }}:</span>
     <a
       v-for="(v, k) in links.documents"

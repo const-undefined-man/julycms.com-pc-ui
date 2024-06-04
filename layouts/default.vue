@@ -13,7 +13,7 @@ category.value = data.value.data || [];
 // banner
 const { baseUrl } = useRuntimeConfig().public;
 const banner = ref([]);
-const { data: patch } = await useApi.patch(5);
+const { data: patch } = await useApi.patch(1);
 banner.value = patch.value.data.patchList || [];
 
 const links = ref({});

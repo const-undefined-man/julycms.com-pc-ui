@@ -16,7 +16,7 @@ defineProps({
       class="w-[380px] h-[380px] rounded-full absolute bg-slate-300 opacity-70 top-[-55%]"
       style="left: calc(50% - 190px)"
     ></div>
-    <div class="text-center mt-5">
+    <div v-if="item.icon" class="text-center mt-5">
       <UIcon :name="item.icon" dynamic class="text-6xl text-blue-400" />
     </div>
     <div class="text-center mt-16">
