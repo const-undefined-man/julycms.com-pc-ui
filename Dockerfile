@@ -5,7 +5,7 @@ FROM node:${NODE_VERSION}-alpine as build-stage
 
 WORKDIR /app
 
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm config set registry https://registry.npmmirror.com/
 
@@ -20,7 +20,7 @@ FROM node:${NODE_VERSION}-alpine as production-stage
 
 WORKDIR /app
 
-COPY --from=build-stage /app/.output .
+COPY --from=build-stage /app/.output ./
 
 EXPOSE 3000
 
