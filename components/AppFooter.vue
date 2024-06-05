@@ -34,9 +34,7 @@ if (curYear !== copyYear.value) {
     <div class="w-full px-6 md:container mx-auto text-sm text-stone-600">
       <div class="flex justify-between">
         <div class="text-left hidden lg:block">
-          <NuxtLink to="/" class="flex justify-center md:justify-start"
-            ><NuxtImg src="/logo.svg" width="120px"
-          /></NuxtLink>
+          <NuxtLink to="/" class="flex justify-center md:justify-start"><img src="/logo.svg" width="120px" /></NuxtLink>
         </div>
 
         <ul class="flex flex-wrap gap-x-3 flex-1 justify-around sm:gap-x-5 lg:flex-none">

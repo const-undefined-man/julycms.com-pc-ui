@@ -15,7 +15,7 @@ const toggleMenu = () => {
 <template>
   <header class="w-full bg-white/80 backdrop-blur-md sticky top-0 z-30">
     <div class="w-full p-6 flex justify-between items-center py-4 md:container md:mx-auto">
-      <NuxtLink to="/" class="bg-none relative z-50"><NuxtImg src="/logo.svg" width="120px" /></NuxtLink>
+      <NuxtLink to="/" class="bg-none relative z-50"><img src="/logo.svg" width="120px" /></NuxtLink>
 
       <nav class="navbar" :class="isOpen ? 'open' : ''">
         <ul class="lg:flex lg:items-center lg:gap-5">

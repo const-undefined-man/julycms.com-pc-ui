@@ -20,7 +20,6 @@
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
-    "@nuxt/image": "^1.7.0",
     "@nuxtjs/sitemap": "^5.1.5",
     "eslint": "^8.57.0",
     "vite-plugin-eslint2": "^4.4.0"
