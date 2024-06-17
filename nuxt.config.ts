@@ -2,6 +2,9 @@
 import envConfig from "./env.config"
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  site: {
+    url: 'https://demo.julycms.com',
+  },
   runtimeConfig: {
     public: {
       ...envConfig
