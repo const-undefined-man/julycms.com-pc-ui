@@ -29,7 +29,8 @@ export default defineNuxtConfig({
         },
       ],
       script: [
-        { src: `//api.map.baidu.com/api?type=webgl&v=1.0&ak=${envConfig.baiduMapAK}`}
+        { src: `//api.map.baidu.com/api?type=webgl&v=1.0&ak=${envConfig.baiduMapAK}`},
+        { src: '//hm.baidu.com/hm.js?ba2634795427609b926adb972b7dc515'}
       ],
       noscript: [
         { children: 'JavaScript is required' }
