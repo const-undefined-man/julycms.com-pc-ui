@@ -6,7 +6,7 @@ export const useApi = {
   // 子导航
   navChildren: (catdir: string) => useJulyFetch(`/api/pc/nav-children/${catdir}`),
   // 导航栏目下面的内容
-  navContent: (catdir: string, query: any) => useJulyFetch(`/api/pc/nav-content/${catdir}`, {query}),
+  navContent: (catdir: string, query?: Record<string, string | number>) => useJulyFetch(`/api/pc/nav-content/${catdir}`, {query}),
   // 碎片
   patch: (id: number) => useJulyFetch(`/api/pc/patch/${id}`),
   // 文章详情
